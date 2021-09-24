@@ -1,2 +1,37 @@
 @import 'utils';
 @import 'config';
+
+.container {
+
+    nav {
+        display: flex;
+        width: 90%;
+        margin: 1em auto;
+        justify-content: space-between;
+    }
+
+    .hero {
+        background: $heroBG;
+        // background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding:10% 0 2em 2em;
+        
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            color: #ffffff;
+            // border-bottom: solid white;
+            
+
+            strong {
+                font-size: 4rem;
+                display: block;
+                font-weight: 800;
+                color: white;
+                font-family: $heroFont;
+            }
+        }
+    }
+}
