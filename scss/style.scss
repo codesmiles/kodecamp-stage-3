@@ -12,26 +12,73 @@
 
     .hero {
         background: $heroBG;
-        // background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
-        padding:10% 0 2em 2em;
-        
+        padding: 15em 0 2em 4em;
+
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 4rem;
             font-weight: 300;
             color: #ffffff;
-            // border-bottom: solid white;
-            
+            border-bottom: solid white 0.2em;
+            width: 50%;
+
 
             strong {
-                font-size: 4rem;
+                font-size: 6.5rem;
                 display: block;
                 font-weight: 800;
                 color: white;
                 font-family: $heroFont;
             }
+        }
+
+        .logo {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            color: #ffffff;
+
+            span {
+
+                p {
+                    font-size: 1.2em;
+                }
+            }
+
+        }
+    }
+
+    .services {
+        text-align: center;
+        background-color: #f2f2f2;
+
+        // line-height: 2em;
+        // letter-spacing:0.1em;
+        padding: 9em 15% 6em;
+        // font-size:2em;
+        h4 {
+            color: #999999;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 4em;
+            line-height: 1.1;
+            font-family: $serviceFont;
+            margin-top:0.5em;
+            margin-bottom: 0.5em;
+        }
+        p{
+            font-size:1.5em;
+            line-height: 2em;
+            font-weight: 300;
+            margin-bottom: 1em;
+        }
+        a {
+            @extend %btn;
         }
     }
 }

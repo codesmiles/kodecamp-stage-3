@@ -1,14 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   max-width: 100%;
   padding: 0;
   margin: 0;
-  line-height: normal;
+  line-height: 1em;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.container .services a {
+  background-color: #e71a23;
+  padding: 1.5em 2em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 4px;
 }
 
 .container nav {
@@ -21,19 +34,53 @@
   background: url("/activity-7/hero-bg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 10% 0 2em 2em;
+  padding: 15em 0 2em 4em;
 }
 .container .hero h1 {
-  font-size: 2.8rem;
+  font-size: 4rem;
   font-weight: 300;
   color: #ffffff;
+  border-bottom: solid white 0.2em;
+  width: 50%;
 }
 .container .hero h1 strong {
-  font-size: 4rem;
+  font-size: 6.5rem;
   display: block;
   font-weight: 800;
   color: white;
   font-family: "Archivo Black", sans-serif;
+}
+.container .hero .logo {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.container .hero .logo span p {
+  font-size: 1.2em;
+}
+.container .services {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 9em 15% 6em;
+}
+.container .services h4 {
+  color: #999999;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.container .services h2 {
+  font-size: 4em;
+  line-height: 1.1;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.container .services p {
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: 300;
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
