@@ -12,12 +12,27 @@
     box-sizing: border-box;
 }
 
-%btn{
- background-color: #e71a23;
- padding: 1.5em 2em;
- text-decoration: none;
- color: #ffffff;
- display: inline-block;
- font-weight: 600;
- border-radius: 4px;
+strong {
+    display: block;
+    color: white;
+
+}
+
+%btn {
+    background-color: #e71a23;
+    padding: 1.5em 3em;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+%font {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+%fontupdate{
+    line-height: 2em;
+    font-weight: 300;
 }

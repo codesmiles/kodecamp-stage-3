@@ -27,14 +27,13 @@
 
             strong {
                 font-size: 6.5rem;
-                display: block;
                 font-weight: 800;
-                color: white;
-                font-family: $heroFont;
+                 font-family: $heroFont;
             }
         }
 
         .logo {
+            padding-top: 2em;
             display: flex;
             width: 50%;
             justify-content: space-around;
@@ -50,35 +49,181 @@
         }
     }
 
-    .services {
-        text-align: center;
-        background-color: #f2f2f2;
-
-        // line-height: 2em;
-        // letter-spacing:0.1em;
+   .services{
+     
         padding: 9em 15% 6em;
-        // font-size:2em;
-        h4 {
-            color: #999999;
-            font-size: 1.5em;
-            font-weight: 500;
+               text-align: center;
+               background-color: #f2f2f2;
+
+           h2 {
+               font-size: 4em;
+               line-height: 1.1;
+               font-family: $serviceFont;
+               margin-top: 0.5em;
+               margin-bottom: 0.5em;
+           }
+           
+            p {
+                @extend %fontupdate;
+                font-size: 1.5em;
+                margin-bottom: 1em;
+            }
+       
+           h4 {
+               color: #999999;
+               font-size: 1.5em;
+               font-weight: 500;
+           }
+            a {
+                @extend %btn;
+            }
+   }
+
+    .help {
+        display: grid;
+        grid-template-columns: auto auto;
+        // padding-left:10em ;
+        // padding-right: 10em;
+        section {
+            // img{
+            //     width: 100%
+            // }
+            p {
+                @extend %font;
+                font-size: 1.2em;
+                padding:2em 6.7em;
+
+            }
+            h3{
+                font-size: 3em;
+            }
         }
 
-        h2 {
+    }
+
+    .best-quality {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-evenly;
+        background-image: $BQBGimage;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        div {
+            padding-top: 13em;
+            padding-right: 5%;
+
+            h1 {
+                font-size: 4.5em;
+                color: $BQfont;
+                padding-bottom: 0.5em;
+                width: 90%;
+                border-bottom: solid 0.2em red;
+            }
+
+            p {
+                @extend %font;
+                padding: 1em 0 1em;
+
+            }
+
+            a {
+                @extend %btn;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 98%;
+        }
+
+    }
+
+    .all-services {
+
+        h1 {
             font-size: 4em;
-            line-height: 1.1;
-            font-family: $serviceFont;
-            margin-top:0.5em;
-            margin-bottom: 0.5em;
+            padding: 1em;
         }
-        p{
-            font-size:1.5em;
-            line-height: 2em;
-            font-weight: 300;
-            margin-bottom: 1em;
-        }
-        a {
-            @extend %btn;
+
+        div {
+            display: flex;
+            justify-content: center;
+
+            section {
+                padding: 4em;
+
+                h3 {
+                    font-size: 2em;
+                    padding-bottom: 1em
+                }
+
+                p {
+                    @extend %font;
+                    font-style: italic;
+
+                }
+            }
         }
     }
+
+    .about-us {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 4em;
+        background-color: $BQfont;
+        color: #f2f2f2;
+
+        .first {
+            padding:7em 1em 2em;
+            h3{
+                font-size: 1.6em;
+                font-weight: 300;
+                font-family: $serviceFont;
+            }
+            h1{
+                font-size: 6em;
+                font-family: $serviceFont;
+                font-weight: 400;
+            }
+            strong{
+                font-size: 0.9em;
+            }
+        }
+
+        .second {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 2em;
+            grid-row-gap: 2em;
+            justify-content: center;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .to-do{
+        text-align: center;
+        padding:7em 14em;
+
+        h1{
+            font-size: 2.5em;
+            padding-bottom: 1em;
+        }
+        p{
+             @extend %fontupdate;
+             line-height:1.5em;
+            font-size: 2.5em;
+          
+        }
+        a{
+            @extend %btn;
+        }
+        
+
+    }
+
 }
