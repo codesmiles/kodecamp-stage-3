@@ -1,5 +1,6 @@
 @import 'utils';
 @import 'config';
+@import 'media';
 
 .container {
 
@@ -14,21 +15,23 @@
         background: $heroBG;
         background-size: 100%;
         background-repeat: no-repeat;
-        padding: 15em 0 2em 4em;
+        padding: 20em 0 6em 4em;
 
 
         h1 {
-            font-size: 4rem;
+            font-size: 5em;
             font-weight: 300;
             color: #ffffff;
             border-bottom: solid white 0.2em;
-            width: 50%;
+            width: 60%;
+            line-height: 1.5em;
+            padding-bottom: 0.5em;
 
 
             strong {
-                font-size: 6.5rem;
+                font-size: 7rem;
                 font-weight: 800;
-                 font-family: $heroFont;
+                font-family: $heroFont;
             }
         }
 
@@ -49,53 +52,63 @@
         }
     }
 
-   .services{
-     
-        padding: 9em 15% 6em;
-               text-align: center;
-               background-color: #f2f2f2;
+    .services {
 
-           h2 {
-               font-size: 4em;
-               line-height: 1.1;
-               font-family: $serviceFont;
-               margin-top: 0.5em;
-               margin-bottom: 0.5em;
-           }
-           
-            p {
-                @extend %fontupdate;
-                font-size: 1.5em;
-                margin-bottom: 1em;
-            }
-       
-           h4 {
-               color: #999999;
-               font-size: 1.5em;
-               font-weight: 500;
-           }
-            a {
-                @extend %btn;
-            }
-   }
+        padding: 9em 15% 6em;
+        text-align: center;
+        background-color: #f2f2f2;
+
+        h2 {
+            font-size: 4em;
+            line-height: 1.1;
+            font-family: $serviceFont;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            @extend %fontupdate;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        h4 {
+            color: #999999;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        a {
+            @extend %btn;
+        }
+    }
 
     .help {
         display: grid;
-        grid-template-columns: auto auto;
-        // padding-left:10em ;
-        // padding-right: 10em;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+        margin: 4em 8em;
+
         section {
-            // img{
-            //     width: 100%
-            // }
+
+            img{
+                width: 95%
+            }
             p {
                 @extend %font;
                 font-size: 1.2em;
-                padding:2em 6.7em;
+                padding: 2em 3em;
 
             }
-            h3{
-                font-size: 3em;
+
+            h3 {
+                font-size: 2.5em;
+            }
+
+            h4 {
+                color: $red;
+                font-size: 2em;
+                padding: 1em 0 2em;
             }
         }
 
@@ -118,7 +131,7 @@
                 color: $BQfont;
                 padding-bottom: 0.5em;
                 width: 90%;
-                border-bottom: solid 0.2em red;
+                border-bottom: solid 0.2em $red;
             }
 
             p {
@@ -141,9 +154,9 @@
 
     .all-services {
 
-        h1 {
+        h2 {
             font-size: 4em;
-            padding: 1em;
+            padding:1em 1em 0;
         }
 
         div {
@@ -153,6 +166,15 @@
             section {
                 padding: 4em;
 
+                div{
+                    background-color: $red;
+                    border-radius: 100%;
+                    width:6em;
+                    height: 6em;
+                    padding: 1.3em;
+                    margin-bottom: 2em;
+                    
+                }
                 h3 {
                     font-size: 2em;
                     padding-bottom: 1em
@@ -175,18 +197,21 @@
         color: #f2f2f2;
 
         .first {
-            padding:7em 1em 2em;
-            h3{
+            padding: 7em 1em 2em;
+
+            h3 {
                 font-size: 1.6em;
                 font-weight: 300;
                 font-family: $serviceFont;
             }
-            h1{
+
+            h1 {
                 font-size: 6em;
                 font-family: $serviceFont;
                 font-weight: 400;
             }
-            strong{
+
+            strong {
                 font-size: 0.9em;
             }
         }
@@ -205,25 +230,48 @@
         }
     }
 
-    .to-do{
+    .to-do {
         text-align: center;
-        padding:7em 14em;
+        padding: 7em 14em;
 
-        h1{
+        h1 {
             font-size: 2.5em;
             padding-bottom: 1em;
         }
-        p{
-             @extend %fontupdate;
-             line-height:1.5em;
+
+        p {
+            @extend %fontupdate;
+            line-height: 1.5em;
             font-size: 2.5em;
-          
+
         }
-        a{
+
+        a {
             @extend %btn;
+            margin: 1em;
         }
-        
+
+        .call-us {
+            background-color: #ffffff;
+            color: #000000;
+            border: #000000 solid 0.1em;
+            // border-style: solid;
+            padding: 1.5em 4em;
+        }
+
 
     }
 
+    footer {
+        text-align: center;
+        background: rgb(44, 40, 40);
+        color: hsl(0, 0%, 95%);
+        padding: 2em 25em;
+
+        p {
+            padding: 2em;
+            @extend %font;
+            font-size: 1em;
+        }
+    }
 }
