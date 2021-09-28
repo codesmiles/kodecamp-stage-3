@@ -1,0 +1,62 @@
+@import 'utils';
+@import 'config';
+
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 425px)";
+$media-mobile-sm: "only screen and (max-width : 320px)";
+
+// @mixin breakpoint($size) {
+//     @if $size == $media-mobile-sm {
+//         @media (min-width: $media-mobile-sm) {
+//         //    any style i want
+//         }
+//     }
+
+//     @else if $size==$media-mobile {
+//         @media (max-width:$media-mobile) {
+//         //    any style i want
+//         }
+//     }
+
+//     @else if $size==$media-tablet {
+//         @media (max-width: $media-tablet) {
+//         //    any style i want
+//         .nav {
+//             display: block;
+//         }
+        
+//         }
+//     }
+
+//     @else if $size==$media-desktop {
+//         @media (max-width: $media-desktop) {
+//         //    any style i want
+//         }
+//     }
+
+// }
+
+//  @include breakpoint(medium)
+
+
+
+// CAN BE USED
+
+// @media #{$media-desktop} {
+//     background: red;
+// }
+
+@media #{$media-tablet} {
+    
+    nav{background: red;}
+}
+
+// @media #{$media-mobile} {
+//     background:
+//      red;
+// }
+
+// @media #{$media-mobile-sm} {
+//     background: red;
+// }

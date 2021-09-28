@@ -9,6 +9,7 @@
         width: 90%;
         margin: 1em auto;
         justify-content: space-between;
+    // @include breakpoint($media-tablet);
     }
 
     .hero {
@@ -272,6 +273,14 @@
             padding: 2em;
             @extend %font;
             font-size: 1em;
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    container{
+        nav{
+            display:block;
         }
     }
 }
