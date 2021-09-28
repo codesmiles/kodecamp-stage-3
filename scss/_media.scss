@@ -1,10 +1,47 @@
 @import 'utils';
 @import 'config';
 
-$media-desktop: "only screen and (max-width : 1024px)";
-$media-tablet: "only screen and (max-width : 768px)";
+$media-desktop: "only screen and (min-width : 1024px)";
+$media-tablet: "screen and (max-width : 768px)";
 $media-mobile: "only screen and (max-width : 425px)";
 $media-mobile-sm: "only screen and (max-width : 320px)";
+
+
+
+// CAN BE USED
+
+// @media #{$media-desktop} {
+
+//             .logo {
+//                display: flex;
+//                 // background: red;
+//             }
+        
+
+// }
+
+// @media #{$media-tablet} {
+
+//     nav {
+
+//         background: red;
+//         display: block;
+
+
+//     }
+// }
+
+// @media #{$media-mobile} {
+//     background:
+//      red;
+// }
+
+// @media #{$media-mobile-sm} {
+//     background: red;
+// }
+
+
+// WILL BE RESEARCHED
 
 // @mixin breakpoint($size) {
 //     @if $size == $media-mobile-sm {
@@ -25,7 +62,7 @@ $media-mobile-sm: "only screen and (max-width : 320px)";
 //         .nav {
 //             display: block;
 //         }
-        
+
 //         }
 //     }
 
@@ -38,25 +75,3 @@ $media-mobile-sm: "only screen and (max-width : 320px)";
 // }
 
 //  @include breakpoint(medium)
-
-
-
-// CAN BE USED
-
-// @media #{$media-desktop} {
-//     background: red;
-// }
-
-@media #{$media-tablet} {
-    
-    nav{background: red;}
-}
-
-// @media #{$media-mobile} {
-//     background:
-//      red;
-// }
-
-// @media #{$media-mobile-sm} {
-//     background: red;
-// }

@@ -2,6 +2,7 @@
 @import 'config';
 @import 'media';
 
+
 .container {
 
     nav {
@@ -277,10 +278,5 @@
     }
 }
 
-@media screen and (max-width:800px) {
-    container{
-        nav{
-            display:block;
-        }
-    }
-}
+
+

@@ -80,11 +80,6 @@ strong {
   font-weight: 300;
 }
 
-@media only screen and (max-width : 768px) {
-  nav {
-    background: red;
-  }
-}
 .container nav {
   display: flex;
   width: 90%;
@@ -279,12 +274,6 @@ strong {
 .container footer p {
   padding: 2em;
   font-size: 1em;
-}
-
-@media screen and (max-width: 800px) {
-  container nav {
-    display: block;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
