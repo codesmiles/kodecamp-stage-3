@@ -7,7 +7,7 @@
   font-size: 18px;
 }
 .hero {
-  background: url("/activity-7/hero-bg.jpg");
+  background: url("activity-7/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -78,7 +78,7 @@ h3 {
 }
 
 .best-quality {
-  background-image: url("/images/g.jpg");
+  background-image: url("images/g.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
