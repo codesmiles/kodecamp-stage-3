@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-size: 18px;
+}
+.hero {
+  background: url("/activity-7/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  font-weight: 300;
+  color: #ffffff;
+  border-bottom: solid white 0.2em;
+  /* width: 50%; */
+  padding-bottom: 0.5em;
+}
+
+.hero span {
+  color: #ffff;
+  font-size: 2em;
+  font-weight: 800;
+  display: block;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.hero p {
+  color: #ffffff;
+  /* font-size: 1.2em; */
+}
+
+.services {
+  background-color: #f2f2f2;
+}
+.services h4 {
+  color: #999999;
+  font-weight: 500;
+}
+.services h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.services p {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.services a {
+  background-color: #e71a23;
+  padding: 1em 3em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.help p {
+  font-size: 1.15em;
+  line-height: 1.5em;
+}
+.help h1 {
+  color: #000;
+}
+.help h1,
+h3 {
+  font-weight: 700;
+}
+.help h3 {
+  color: #e71a23;
+}
+
+.best-quality {
+  background-image: url("/images/g.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.best-quality h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  border-bottom: solid 0.2em #e71a23;
+  color: #104e92;
+}
+.best-quality a {
+  background-color: #e71a23;
+  padding: 1em 3em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.best-quality p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.all-services h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.all-services p {
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+.about-us {
+  color: #f2f2f2;
+  background-color: #104e92;
+}
+.about-us h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffff;
+  font-size: 1.3em;
+}
+.about-us h1,
+strong {
+  color: white;
+}
+.about-us h1 {
+  font-size: 4em;
+}
+.about-us strong {
+  display: inline-block;
+  font-size: 1em;
+}
+
+.to-do h1 {
+  font-weight: 700;
+}
+
+.to-do p {
+  line-height: 1.5em;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.to-do a{
+    
+  padding: 1em 3em;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.book{
+     background-color: #e71a23;
+     color: #ffffff;
+}
+.call{
+    border: solid 0.1em black;
+    color: #000;
+}
+
+
