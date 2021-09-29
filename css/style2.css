@@ -162,4 +162,53 @@ strong {
     color: #000;
 }
 
+@media screen and (max-width:425px){
+.hero h1{
+  font-size:1.5em;
+}
+ .services h1{
+    font-size:inherit;
+  }
+  .services p{
+    font-size:inherit;
+  }
+  .best-quality p{
+    font-size:inherit;
+  }
+  .to-do h1{
+    font-size:inherit;
+  }
+  .to-do p{
+    font-size:inherit;
+  }
+  
+  .help p{
+    font-size:inherit;
+  }
+  .help h1{
+    font-size:inherit;
+  }
+  .help h3{
+    font-size:inherit;
+  }
+  .all-services p{
+    font-size:inherit
+  }
+    .about-us h1{
+    font-size:3em;
+  }
+}
 
+@media screen and (max-width:320px){
+  .hero h1{
+    font-size:1em;
+  }
+
+ 
+
+  .best-quality h1{
+    font-size:inherit;
+  }
+
+
+}
